@@ -3,8 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SignupComponent } from '../components/signup/signup.component';
 import { SigninComponent } from '../components/signin/signin.component';
 import { LandingComponent } from '../components/landing/landing.component';
-
-
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -13,12 +12,14 @@ import { LandingComponent } from '../components/landing/landing.component';
     LandingComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule
   ],
   exports:[
     SignupComponent,
     SigninComponent,
-    LandingComponent
+    LandingComponent,
+    MatButtonModule
   ]
 })
 export class SharedModule { }
