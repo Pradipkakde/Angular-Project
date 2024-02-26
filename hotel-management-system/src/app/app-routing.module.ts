@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from 'src/common/common-component/landing/landing.component';
+import { SigninComponent } from 'src/common/common-component/signin/signin.component';
+import { SignupComponent } from 'src/common/common-component/signup/signup.component';
 
 const routes: Routes = [
   {
     path:'',component:LandingComponent
+  },
+  {
+    path:'landing',component:LandingComponent
+  },
+  {
+    path:'signin',component:SigninComponent
+  },
+  {
+    path:'signup',component:SignupComponent
   },
   {
     path:'owner',loadChildren:()=>import('./owner/owner.module').then(m=>m.OwnerModule)
