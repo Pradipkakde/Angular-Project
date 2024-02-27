@@ -21,6 +21,7 @@ export class LandingComponent {
     else{
       this.router.navigateByUrl('user')
     }
+    
   }
   
 

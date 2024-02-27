@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from 'src/common/common-component/home/home.component';
 import { LandingComponent } from 'src/common/common-component/landing/landing.component';
+import { NotfoundComponent } from 'src/common/common-component/notfound/notfound.component';
 import { SigninComponent } from 'src/common/common-component/signin/signin.component';
 import { SignupComponent } from 'src/common/common-component/signup/signup.component';
 
 const routes: Routes = [
   {
-    path:'',component:LandingComponent
+    path:"",component:HomeComponent
+  },
+  {
+    path:'home',component:HomeComponent
   },
   {
     path:'landing',component:LandingComponent
@@ -25,6 +30,9 @@ const routes: Routes = [
   },
   {
     path:'user',loadChildren:()=>import('./user/user.module').then(m=>m.UserModule)
+  },
+  {
+    path:'**',component:NotfoundComponent
   }
 ];
 
