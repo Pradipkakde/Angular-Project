@@ -6,6 +6,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from '../common-component/signin/signin.component';
 import { NotfoundComponent } from '../common-component/notfound/notfound.component';
+import { HomeComponent } from '../common-component/home/home.component';
 
 
 @NgModule({
@@ -13,8 +14,8 @@ import { NotfoundComponent } from '../common-component/notfound/notfound.compone
     SigninComponent, 
     LandingComponent,
      NotfoundComponent,
-     SignupComponent
-    
+     SignupComponent,
+   
   ],
   imports: [
     CommonModule,
@@ -26,8 +27,7 @@ import { NotfoundComponent } from '../common-component/notfound/notfound.compone
   exports:[
     SigninComponent,
     SignupComponent,
- 
-    MatButtonModule,   
+        MatButtonModule,   
     NotfoundComponent
 
   ]

@@ -1,15 +1,18 @@
-body{
-	
-	padding:0;
-	
+body{		
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	min-height:100vh;
 	font-family: 'Jost', sans-serif;	
 	background-image: url('/../assets/Valentines_Day_1.webp');
+	border-radius: 10px;
+	background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;      
 	
 }
+
 .main{
 	width: 350px;
 	height: 500px;
@@ -18,6 +21,7 @@ body{
 	background: url("https://doc-08-2c-docs.googleusercontent.com/docs/securesc/68c90smiglihng9534mvqmq1946dmis5/fo0picsp1nhiucmc0l25s29respgpr4j/1631524275000/03522360960922298374/03522360960922298374/1Sx0jhdpEpnNIydS4rnN4kHSJtU1EyWka?e=view&authuser=0&nonce=gcrocepgbb17m&user=03522360960922298374&hash=tfhgbs86ka6divo3llbvp93mg4csvb38") no-repeat center/ cover;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
+	
 }
 #chk{
 	display: none;
@@ -28,7 +32,7 @@ body{
 	height: 100%;
 }
 label{
-	color: #fff;
+	color: #ffffff;
 	font-size: 2.3em;
 	justify-content: center;
 	display: flex;
@@ -55,7 +59,7 @@ button{
 	margin: 10px auto;
 	justify-content: center;
 	display: block;
-	color: #fff;
+	color: #ffffff;
 	background: #b12273;
 	font-size: 1em;
 	font-weight: bold;
@@ -70,8 +74,8 @@ button:hover{
 	background: #6d44b8;
 }
 .login{
-	height: 460px;
-	background: #eee;
+	height: 440px;
+	background: #f0e9e9;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;

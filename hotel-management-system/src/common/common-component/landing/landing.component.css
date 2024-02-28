@@ -1,11 +1,13 @@
 .landing{
     background-image: url('/../assets/welcomenew.png');
-    
-    background-position:center;
-    background-repeat: no-repeat;
-    display: flex;
-    
-    position: relative;
-    height:100;
-    width: -2000px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;      
+}
+.button{
+    text-align: center;
+    padding-top:460px;
+   
+
 }

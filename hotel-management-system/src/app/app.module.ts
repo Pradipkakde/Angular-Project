@@ -10,7 +10,8 @@ import { HomeComponent } from 'src/common/common-component/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
+    HomeComponent
+    
     
     
   ],

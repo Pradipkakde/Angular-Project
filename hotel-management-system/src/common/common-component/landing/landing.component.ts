@@ -23,6 +23,10 @@ export class LandingComponent {
     }
     
   }
+  back(){
+    this.router.navigateByUrl('/home')
+
+  }
   
 
   }
