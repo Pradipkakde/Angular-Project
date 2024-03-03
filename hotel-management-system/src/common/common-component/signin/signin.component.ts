@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-signin',
   templateUrl: './signin.component.html',
@@ -11,8 +12,7 @@ export class SigninComponent {
 
   }
   back(){
-    this.router.navigateByUrl('/landing')
+   this.router.navigateByUrl('/landing')
 
-  }
-  
+ }
 }

@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SharedModule } from 'src/common/shared/shared.module';
+
 import { HomeComponent } from 'src/common/common-component/home/home.component';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -18,7 +19,13 @@ import { HomeComponent } from 'src/common/common-component/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule, 
+    
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  exports:[
+FormsModule,
+ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

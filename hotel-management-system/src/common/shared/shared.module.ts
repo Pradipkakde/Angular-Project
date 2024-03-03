@@ -6,7 +6,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SigninComponent } from '../common-component/signin/signin.component';
 import { NotfoundComponent } from '../common-component/notfound/notfound.component';
-import { HomeComponent } from '../common-component/home/home.component';
+import { HotellistComponent } from '../common-component/hotellist/hotellist.component';
+
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { HomeComponent } from '../common-component/home/home.component';
     LandingComponent,
      NotfoundComponent,
      SignupComponent,
+     HotellistComponent
    
   ],
   imports: [
@@ -27,8 +29,9 @@ import { HomeComponent } from '../common-component/home/home.component';
   exports:[
     SigninComponent,
     SignupComponent,
-        MatButtonModule,   
-    NotfoundComponent
+    MatButtonModule,   
+    NotfoundComponent,
+    HotellistComponent
 
   ]
 })

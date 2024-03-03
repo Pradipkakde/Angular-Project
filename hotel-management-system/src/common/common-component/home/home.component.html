@@ -2,32 +2,44 @@
 <html>
 <head>
 	<title>Slide Navbar</title>
+	
 </head>
-<div class="navbar">
-   <marquee>HOTEL MANAGEMENT SYSTEM</marquee>    
-  </div>
 <body>
 	<div class="main">  	
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form>
-					<label aria-hidden="true">Login</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button routerLink="/landing">Login</button>
+				<form (ngSubmit)="login()" #loginForm="ngForm">
+					<label for="chk" aria-hidden="true">Login</label>
+					
+					<input type="email"  placeholder="Email" name="email" ngModel required email #email="ngModel">
+					<div>
+						<small *ngIf="email.invalid && email.touched">Email id is required field</small>
+					</div>
+					<input type="password"  placeholder="Password"name="password" ngModel required #pass="ngModel">
+					<div>
+						<small *ngIf="pass.invalid && pass.touched">Password is required field</small>
+					</div>
+					<button routerLink="/landing" [disabled]="!loginForm.valid">Login</button>
 				</form>
 			</div>
 
 			<div class="login">
-				<form>
-					<label for="chk" aria-hidden="true">SignUp</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					
-                    <button routerLink="/signup">SignUp</button>
-                    
+				<form (ngSubmit)="signup()" #myForm="ngForm">
+					<label for="chk" aria-hidden="true">Signup</label>
+					<input type="text"  placeholder="User name" name="name" ngModel required #uname="ngModel">
+					<div>
+						<small class="val" *ngIf="uname.invalid && uname.touched">Username is required field</small>
+					</div>
+					<input type="email"  placeholder="Email" name="email" ngModel required email #mail="ngModel">
+					<div>
+						<small class="val" *ngIf="mail.invalid && mail.touched">Email id is required field</small>
+					</div>
+					<input type="password"  placeholder="Password"  name="password" ngModel required #passw="ngModel">
+					<div>
+						<small class="val" *ngIf="passw.invalid && passw.touched"> Password is required field</small>
+					</div>
+					<button routerLink="/landing" [disabled]="!myForm.valid">Signup</button>
 				</form>
 			</div>
 	</div>

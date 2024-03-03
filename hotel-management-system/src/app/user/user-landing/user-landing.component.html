@@ -1,34 +1,32 @@
 
+
 <body>
     <!-- partial:index.partial.html -->
     <div class="box-form">
         <div class="left">
-            <div class="overlay">
-            <h1>Hotel Management System</h1>           
-            <span>
-                <p>login with social media</p>
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter</a>
-            </span>
+            <div class="overlay" >
+            <h1>Hotel Management System</h1>                    
             </div>
         </div>
-                  <div class="right">
-            <h5>USER-LOGIN</h5>
-            <p>Don't have an account? <a href="/signup">SignUp Here</a> it takes less than a minute</p>
-            <div class="inputs">
-                <input type="text" placeholder="user name">
-                <br>
-                <input type="password" placeholder="password">
-            </div>
+        <div class="right">
+            <h5>ADMIN-LOGIN</h5> 
+            <form (ngSubmit)="onSubmit()" #myForm="ngForm">         
+                <input type="text" name="uname" placeholder="User name" name="username" ngModel required #uname="ngModel">
+                 <div>
+                    <small class="val" *ngIf="uname.invalid && uname.touched">Username is required field</small>
+                </div>
                 
-                <br><br>
-                
-            <div >
-                    <!-- Angular -->             
+                <input type="password" name="pswd" placeholder="Password" name="password" ngModel required #pass="ngModel" >
+               <div>
+                    <small class="val" *ngIf="pass.invalid && pass.touched">Password is required field</small>
+                </div>
+                <p>Don't have an account? <a href="/signup">SignUp Here</a> it takes less than a minute</p> 
+                <button mat-raised-button color="accent" routerLink="/landing">Back</button>
+                <button mat-raised-button color="accent" routerLink="/hotellist" [disabled]="!myForm.valid">SignIn</button>  
+              <!-- Angular -->   
+            </form>          
             </div>			
-            <button mat-raised-button color="accent" routerLink="/landing">Back</button>
-            <button mat-raised-button color="accent" routerLink="/signin">SignIn</button>                 
-            </div>
+           
         
     </div>  
     </body>

@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { OwnerRoutingModule } from './owner-routing.module';
 import { SharedModule } from 'src/common/shared/shared.module';
 import { OwnerLandingComponent } from './owner-landing/owner-landing.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { OwnerLandingComponent } from './owner-landing/owner-landing.component';
   imports: [
     CommonModule,
     OwnerRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule
   ]
 })
 export class OwnerModule { }

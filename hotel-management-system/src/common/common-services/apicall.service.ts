@@ -4,6 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ApicallService {
+  [x: string]: any;
   userName: any;
   id: any;
   fromSignIn: boolean | undefined;
