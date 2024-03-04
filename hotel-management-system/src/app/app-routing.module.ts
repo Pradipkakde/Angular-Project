@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from 'src/common/common-component/home/home.component';
-import { HotellistComponent } from 'src/common/common-component/hotellist/hotellist.component';
 import { LandingComponent } from 'src/common/common-component/landing/landing.component';
 import { NotfoundComponent } from 'src/common/common-component/notfound/notfound.component';
 import { SigninComponent } from 'src/common/common-component/signin/signin.component';
@@ -14,7 +13,6 @@ const routes: Routes = [
   {
     path:"home",component:HomeComponent
   },
- 
   {
     path:'landing',component:LandingComponent
   },
@@ -25,9 +23,6 @@ const routes: Routes = [
     path:'signup',component:SignupComponent
   },
   {
-    path:'hotellist',component:HotellistComponent
-  },
-  {
     path:'owner',loadChildren:()=>import('./owner/owner.module').then(m=>m.OwnerModule)
   },
   {
@@ -35,6 +30,9 @@ const routes: Routes = [
   },
   {
     path:'user',loadChildren:()=>import('./user/user.module').then(m=>m.UserModule)
+  },
+  {
+    path:'list',loadChildren:()=>import('./list/list.module').then(m=>m.ListModule)
   },
   {
     path:'**',component:NotfoundComponent
