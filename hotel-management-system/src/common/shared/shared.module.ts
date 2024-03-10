@@ -8,6 +8,7 @@ import { SigninComponent } from '../common-component/signin/signin.component';
 import { NotfoundComponent } from '../common-component/notfound/notfound.component';
 
 
+
 @NgModule({
   declarations: [
     SigninComponent, 
@@ -22,7 +23,8 @@ import { NotfoundComponent } from '../common-component/notfound/notfound.compone
     CommonModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   
    
   ],
   exports:[

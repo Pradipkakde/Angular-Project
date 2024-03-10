@@ -11,15 +11,15 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    
     
     
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    
+    AppRoutingModule, 
     FormsModule,
     ReactiveFormsModule
   ],
