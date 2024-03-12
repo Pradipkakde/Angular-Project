@@ -1,8 +1,20 @@
-{  
- "admin" : [], 
- "owner " : [], 
- "user" : [], 
- "hotelDetails":[], 
- "hotelBooking":[] 
- } 
- 
+{
+  "admin": [
+    {
+      "id": "1db3",
+      "hoteltype": "non-veg",
+      "hotelname": "dd",
+      "mobile": "dd",
+      "email": "jff",
+      "dor": "2024-03-05T18:30:00.000Z",
+      "facility": "open-garden",
+      "address": "fgf",
+      "landmark": "f",
+      "status": ""
+    }
+  ],
+  "owner ": [],
+  "user": [],
+  "hotelDetails": [],
+  "hotelBooking": []
+}
