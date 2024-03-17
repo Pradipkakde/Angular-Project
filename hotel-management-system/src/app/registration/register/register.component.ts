@@ -14,7 +14,7 @@ import {MatTableDataSource,} from '@angular/material/table';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent {
-  displayedColumns: string[] = ['id', 'hoteltype', 'hotelname', 'mobile','email','dor','facility','landmark','status','action'];
+  displayedColumns: string[] = ['id', 'hoteltype', 'hotelname', 'mobile','email','dor','facility','address','landmark','status','action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
