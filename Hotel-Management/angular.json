@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "myfastfood": {
+    "Hotel-Management": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/myfastfood",
+            "outputPath": "dist/hotel-management",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "myfastfood:build:production"
+              "browserTarget": "Hotel-Management:build:production"
             },
             "development": {
-              "browserTarget": "myfastfood:build:development"
+              "browserTarget": "Hotel-Management:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "myfastfood:build"
+            "browserTarget": "Hotel-Management:build"
           }
         },
         "test": {
@@ -94,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "98f2c9ae-7070-4a9f-a193-3a00ca73bec1"
   }
 }

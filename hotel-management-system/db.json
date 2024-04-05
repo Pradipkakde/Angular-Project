@@ -1,15 +1,15 @@
 {
   "admin": [
     {
-      "id": "1db3",
-      "hoteltype": "non-veg",
-      "hotelname": "dd",
-      "mobile": "dd",
-      "email": "jff",
-      "dor": "2024-03-05T18:30:00.000Z",
+      "id": "7342",
+      "hoteltype": "veg",
+      "hotelname": "darshan",
+      "mobile": "123456789",
+      "email": "kakde.pradip",
+      "dor": "2024-04-10T18:30:00.000Z",
       "facility": "open-garden",
-      "address": "fgf",
-      "landmark": "f",
+      "address": "dfff",
+      "landmark": "ss",
       "status": ""
     }
   ],

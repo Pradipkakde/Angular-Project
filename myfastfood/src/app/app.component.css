@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    width: 100%;
+    color: #fff;
+    background-color:rgb(208, 227, 228);
+    height: 70px;
+}
+.navbar .container{
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+nav{
+    display: flex;
+}
+nav ul{
+    display: flex;
+    margin-right: 10px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    color: #de4c4c;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0px 10px;
+} 
+.navbar .button a{
+    text-decoration: none;
+    background-color: #fff;
+    color: #456d96;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.navbar .button a:hover{
+    background-color: #ddd;
+    transition: 2s ease;
+}
+
